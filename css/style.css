@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'DM regular';
+    src: url('/fonts/DMSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'DM bold';
+    src: url('/fonts/DMSans-Bold.ttf');
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'DM regular';
+    max-width: 1000px;
+}
+
+@media screen and (min-width: 700px) {
+
+    html,
+    body {
+        font-size: 18px;
+
+    }
+}
+
+@media screen,
+print {
+
+    html,
+    body {
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    html,
+    body {
+        line-height: 1.4;
+        font-size: 0.9rem;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.wrapper {
+    margin: 15px;
+    /* margin: 0 auto; */
+    /* max-width: 500px; */
+
+}
+
+.header-nav {
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.hr-border {
+    border: solid 0.5px rgb(227, 227, 227);
+}
+
+.greeting h1 {
+    font-family: 'DM bold';
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.link:hover {
+    font-weight: bolder;
+}
+
+
+.skills {
+    /* max-width: 800px; */
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+.skill {
+    width: 110px;
+    height: 110px;
+    border-top: solid 1px white;
+    border-right: solid 1px white;
+    border-left: solid 1px white;
+    border-bottom: solid 1px rgb(163, 163, 163);
+    transition: border-left 0.55s, border-top 1s, border-right 2s;
+}
+
+@media screen and (min-width: 700px) {
+    .skill {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+.skill:hover {
+    /* border: solid 1px rgb(163, 163, 163); */
+    border-top: solid 1px rgb(163, 163, 163);
+    border-right: solid 1px rgb(163, 163, 163);
+    border-left: solid 1px rgb(163, 163, 163);
+    border-radius: 8px;
+}
+
+.skill a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.php {
+    background: url('/images/PHP-logo.svg.png') no-repeat center;
+    background-size: 90%;
+    transition: filter 0.5s;
+}
+
+.php:hover {
+    filter: brightness(60%)
+}
+
+.javascript {
+    background: url('/images/icons8-javascript-240.png') no-repeat center;
+    background-size: 100%;
+    transition: filter 0.5s;
+}
+
+.javascript:hover {
+    filter: brightness(60%)
+}
+
+.threejs {
+    background: url('/images/Three.js_Icon.svg.png') no-repeat center;
+    background-position: 50% 10px;
+    background-size: 70%;
+    transition: filter 0.5s;
+}
+
+.threejs:hover {
+    filter: brightness(60%)
+}
+.threejs span {
+    color: black;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.html {
+    background: url('/images/1200px-HTML5_logo_and_wordmark.svg.png') no-repeat center;
+    background-size: 85%;
+    transition: filter 0.5s;
+}
+
+.html:hover {
+    filter: brightness(60%)
+}
+
+.css {
+    background: url('/images/CSS3_logo_and_wordmark.svg.png') no-repeat center;
+    background-size: 60%;
+    transition: filter 0.5s;
+}
+
+.css:hover {
+    filter: brightness(60%)
+}
+
+.laravel {
+    background: url('/images/1200px-Laravel.svg.png') no-repeat;
+    background-position: 50% 10px;
+    background-size: 60%;
+    transition: filter 0.5s;
+}
+
+.laravel:hover {
+    filter: brightness(60%)
+}
+
+.laravel span {
+    color: red;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.mysql {
+    background: url('/images/Mysql.png') no-repeat center;
+    background-size: 80%;
+    transition: filter 0.5s;
+}
+
+.mysql:hover {
+    filter: brightness(60%)
+}
