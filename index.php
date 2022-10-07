@@ -24,13 +24,14 @@
     <div class="wrapper">
         <header class="header">
             <nav class="header-nav flex">
-                <a href="/" class="link">Main</a>
-                <a href="/examples" class="link">My cases</a>
+                <a href="/" class="link"><img class="icon" src="/images/icon_next-ltr.png" alt="Main icon"> Main</a>
+                <a href="/examples" class="link"><img class="icon" src="/images/portfolio_icon.png" alt="Case icon"> My cases</a>
+                <a href="https://github.com/norwegian-octopus" class="link"><img class="icon" src="/images/icon-github.svg" alt="GitHub icon"> GitHub</a>
             </nav>
             <hr class="hr-border">
         </header>
         <div class="greeting">
-            <h1>Hey, I'm Alexander Orekhowski</h1>
+            <h1>Hey, I'm Alexander Orekhowski.</h1>
             <p>Recently I started my journey through the webdev,</p>
             <p>and below the tech stack I use (it will be updated):</p>
         </div>

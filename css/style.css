@@ -68,6 +68,11 @@ print {
     gap: 30px;
 }
 
+.icon {
+    width: 17px;
+    height: 17px;
+}
+
 .hr-border {
     border: solid 0.5px rgb(227, 227, 227);
 }
