@@ -14,6 +14,7 @@ body {
     margin: 0 auto;
     font-family: 'DM regular';
     max-width: 1000px;
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 700px) {
@@ -82,6 +83,8 @@ print {
 }
 
 .link {
+    gap: 5px;
+    align-items: center;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
@@ -163,6 +166,7 @@ print {
 .threejs:hover {
     filter: brightness(60%)
 }
+
 .threejs span {
     color: black;
     font-weight: bolder;
